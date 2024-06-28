@@ -1,11 +1,11 @@
 version: '2'
 services:
   web:
-    image: odoo:____
+    image: odoo: <odoo_version>
     depends_on:
       - db
     ports:
-      - "____:8069"
+      - "<ports_web>:8069"
     tty: true
     # command: -- --dev all
     command: -u nama_module -d nama_database
@@ -14,7 +14,7 @@ services:
       - ./config:/etc/odoo
       - ./custom-addons:/mnt/extra-addons
   db:
-    image: postgres:____
+    image: postgres: <postgres_version>
     environment:
       - POSTGRES_DB=postgres
       - POSTGRES_PASSWORD=odoo
@@ -23,7 +23,7 @@ services:
     volumes:
       - odoo-db-data:/var/lib/postgresql/data/pgdata
     ports:
-      - "____:5432"
+      - "<ports_db>:5432"
 volumes:
   odoo-web-data:
   odoo-db-data:
