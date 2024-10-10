@@ -15,7 +15,7 @@ command: odoo -u nama_module -d nama_database
 ```
 2. Ketika update file python ataupun xml, kita harus me-restart di docker CLI atau desktop (GUI)
 3. Ketika update file xml, restart docker CLI atau desktop (GUI), lalu me-refresh browser
-4. Ketika update file python, restart docker CLI atau desktop (GUI), lalu restart browser, tidak perlu upgrade module secara manual, module terupgrade setelah di docker CLI atau GUI direstart
+4. Ketika update file python, restart docker CLI atau desktop (GUI), lalu me-refresh browser, tidak perlu upgrade module secara manual, module terupgrade setelah di docker CLI atau GUI direstart
 
 #### Membuat Module Baru dengan cepat
 ```sh
