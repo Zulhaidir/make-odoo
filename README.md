@@ -1,7 +1,7 @@
 
 #### Running Odoo Application menggunakan "-- --dev all"
 1. Dengan adanya "command: -- --dev all" pada docker-compose.yaml
-```sh
+```yaml
 command: -- --dev all
 ```
 2. Ketika update file python ataupun xml, kita tidak perlu me-restart docker CLI atau desktop (GUI)
@@ -10,7 +10,7 @@ command: -- --dev all
 
 #### Running Odoo Application menggunakan "odoo -u nama_module -d nama_database"
 1. Dengan adanya "command: odoo -u nama_module -d nama_database" pada docker-compose.yaml
-```sh
+```yaml
 command: odoo -u nama_module -d nama_database
 ```
 2. Ketika update file python ataupun xml, kita harus me-restart di docker CLI atau desktop (GUI)
